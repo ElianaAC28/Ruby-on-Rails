@@ -1,4 +1,11 @@
-<%= form_for @product do |f| %>
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<h1>CREATE PRODUCT</h1>
+  <%= form_for @product do |f| %>
 
 <div>
   <%= f.label :name %>
@@ -7,7 +14,7 @@
 
 <div>
   <%= f.label :description %>
-  <%= f.text_area :description %>
+  <%= f.text_area :description%>
 </div>
 
 <div>
@@ -16,7 +23,9 @@
 </div
 
 <div>
-  <%= f.submit %>
+  <%= f.submit value="Create"%>
 </div>
 
 <% end %>
+</body>
+</html>

@@ -1,28 +1,30 @@
 
 body{
-  background-color: white;
-  font-family: sans-serif;
+  background-color: #ECEFF1;
+  font-family: Candara;
+  font-size: 25px;
 }
 
 #main-container{
-  margin: 50px auto;
+  margin: 10px auto;
   width: 800px;
 }
 
 table{
   width: 100%;
-  background-color: white;
-  text-align: left;
+  background-color: #90A4AE;
+  text-align: center;
   border-collapse: collapse;
 }
 
 tr,th{
-  padding: 5Spx;
+  padding: 10px;
+  font-size: 14px;
 }
 
 thead{
-  background-color: #246355;
-  border-bottom: solid 10px;
+  background-color: #263238;
+  border-bottom: solid 5px;
   color:white;
 }
 
@@ -31,7 +33,7 @@ tr:nth-child(even){
 }
 
 tr:hover td{
-  background-color: #369681;
+  background-color: #546E7A;
   color:white;
 }
 
@@ -46,15 +48,65 @@ a{
   text-decoration: none;
   margin: 10px 20px;
   display:inline-block;
-  background-color: #3BA7E1;
+  background-color: #263238;
   color:#fff;
   padding: 10px 20px;
-  box-shadow: 0px 5px 0px #1D64A6;
+  box-shadow: 0px 5px 0px #37474F;
 
 }
 a:hover{
-  box-shadow: 0px 2px 0px #1D64A6;
+  box-shadow: 0px 2px 0px #37474F;
 }
 a:active{
   box-shadow: none;
+}
+
+
+form{
+  width: 220px;
+  padding: 80px;
+  border: 1px solid #263238;
+  margin:auto;
+  background-color: white;
+}
+
+label{
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+
+}
+
+textarea{
+  resize: vertical;
+  max-height: 300px;
+  min-height: 100px;
+  font-family: Candara;
+}
+
+input, textarea{
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border:1px solid #ccc;
+  font-family: Candara;
+  font-size: 15px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #1668C4;
+
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #0288D1;
+}
+
+[type=submit]{
+  margin-bottom: 0px;
+  background: #0288D1;
+  cursor:pointer;
 }
